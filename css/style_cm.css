@@ -1,0 +1,191 @@
+/* Reset de estilos para remover espaçamentos padrões dos navegadores */
+* {
+    margin: 0; /* Remove margens */
+    padding: 0; /* Remove espaçamentos internos */
+    box-sizing: border-box; /* Garante que padding e borda não aumentem o tamanho total do elemento */
+}
+
+/* Configuração geral da página */
+body {
+    display: flex; /* Ativa o modelo Flexbox */
+    flex-direction: column; /* Organiza os elementos em coluna */
+    font-family: Arial, sans-serif; /* Define a fonte padrão */
+}
+
+/* Estilização do cabeçalho */
+header {
+    display: flex; /* Distribui os elementos horizontalmente */
+    justify-content: space-between; /* Espaçamento uniforme entre os itens */
+    align-items: center; /* Alinha os elementos verticalmente */
+    padding: 30px; /* Espaço interno */
+    background-color: #ffffff; /* Cor de fundo branca */
+    position: relative; /* Permite posicionamento absoluto de elementos dentro do header */
+}
+
+/* Ajuste do tamanho da logo */
+.logo img {
+    width: 200px; /* Define largura fixa da logo */
+}
+
+/* Menu de navegação */
+.menu {
+    position: absolute; /* Posicionamento independente dentro do cabeçalho */
+    top: 50%; /* Move o menu para o centro vertical */
+    left: 50%; /* Move o menu para o centro horizontal */
+    transform: translate(-50%, -50%); /* Centraliza completamente */
+    display: flex; /* Organiza os links lado a lado */
+    gap: 20px; /* Espaçamento entre os links */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+/* Estilização dos links do menu */
+.menu a {
+    font-size: 20px; /* Aumenta o tamanho da fonte */
+    color: #1351d8; /* Define cor azul */
+    text-decoration: none; /* Remove sublinhado */
+    font-family: Arial, Helvetica, sans-serif; /* Mantém fonte legível */
+}
+
+/* Configuração da área principal */
+main {
+    display: flex; /* Modelo Flexbox */
+    flex-direction: column; /* Organiza elementos em coluna */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    text-align: center; /* Centraliza textos */
+    padding: 20px; /* Adiciona espaçamento interno */
+    height: 100vh; /* Define altura total da tela */
+}
+
+/* Ajuste da imagem principal */
+#imagem_1 img {
+    width: 100%; /* Faz a imagem ocupar toda a largura disponível */
+    max-width: 3000px; /* Limita tamanho máximo */
+    height: auto; /* Mantém proporção original */
+}
+
+/* Estilização do rodapé */
+footer {
+    display: flex; /* Ativa Flexbox */
+    align-items: baseline; /* Alinha os itens pela linha de base do texto */
+    background-color: #1b357e; /* Cor azul escuro */
+    color: white; /* Texto branco */
+    padding: 10px; /* Espaçamento interno */
+    margin-top: 10%; /* Adiciona espaço antes do rodapé */
+}
+
+/* Organização do conteúdo do rodapé */
+.container {
+    display: flex; /* Layout flexível */
+    justify-content: space-between; /* Distribui os itens com espaço entre eles */
+    width: 80%; /* Define largura fixa */
+}
+
+/* Estilização das redes sociais */
+.redes {
+    display: flex; /* Organiza ícones e texto lado a lado */
+    align-items: center; /* Alinha os itens verticalmente */
+    gap: 10px; /* Espaçamento entre os elementos */
+}
+
+/* Ajuste dos ícones de redes sociais */
+.redes img {
+    width: 30px;  /* Define tamanho dos ícones */
+    height: auto; /* Mantém proporção */
+}
+
+/* Impede que o texto das redes sociais quebre em várias linhas */
+.redes p {
+    white-space: nowrap;
+}
+
+/* Posicionamento da logo no rodapé */
+.logop {
+    margin-left: 170%; /* Move a logo para a direita */
+    display: flex; /* Layout flexível */
+    flex-direction: row; /* Organiza elementos horizontalmente */
+    align-items: center; /* Alinha os itens verticalmente */
+}
+
+/* Tamanho da logo no rodapé */
+.logop img {
+    width: 80px;
+}
+
+/* Estilização do texto de direitos autorais */
+.copyright {
+    text-align: center; /* Centraliza o texto */
+    margin-top: 10px; /* Adiciona espaço superior */
+    font-size: 14px; /* Ajusta o tamanho da fonte */
+    white-space: nowrap; /* Impede que o texto quebre */
+    width: 100%; /* Faz ocupar toda a largura */
+}
+
+/* Estilização do formulário */
+form {
+    display: flex; /* Flexbox para organizar os campos */
+    flex-direction: column; /* Organiza os itens em coluna */
+    gap: 15px; /* Espaçamento entre campos */
+    width: 100%; /* Ocupa toda a largura disponível */
+    max-width: 400px; /* Define um limite para evitar formulários muito largos */
+    margin: auto; /* Centraliza o formulário */
+}
+
+/* Organização dos campos do formulário */
+.campo {
+    display: flex; /* Organiza rótulos e inputs lado a lado */
+    align-items: center; /* Alinha verticalmente */
+}
+
+/* Estilização dos rótulos */
+label {
+    width: 120px; /* Define um tamanho fixo */
+    text-align: left; /* Mantém alinhamento à esquerda */
+    font-weight: bold; /* Destaca o texto */
+}
+
+/* Estilização dos campos de entrada */
+input, select, textarea {
+    flex-grow: 1; /* Faz os campos ocuparem o espaço disponível */
+    padding: 10px; /* Adiciona espaçamento interno */
+    border: 1px solid #ccc; /* Borda cinza clara */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+/* Estilização do botão de envio */
+#botao_enviar {
+    background-color: #007BFF; /* Azul vibrante */
+    color: white; /* Texto branco */
+    padding: 12px 20px; /* Ajusta tamanho do botão */
+    border: none; /* Remove borda */
+    cursor: pointer; /* Adiciona efeito de ponteiro ao passar o mouse */
+    transition: transform 0.3s, background-color 0.3s; /* Animação suave */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+/* Efeito de hover no botão */
+#botao_enviar:hover {
+    transform: scale(1.1); /* Aumenta ligeiramente o botão */
+    background-color: #0056b3; /* Azul mais escuro */
+}
+
+/* Ajuste para telas menores (responsividade) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Organiza elementos verticalmente */
+        align-items: center; /* Centraliza */
+    }
+
+    .menu {
+        flex-direction: row; /* Mantém os links na mesma linha */
+        align-items: center; /* Alinha corretamente */
+        font-size: 18px; /* Ajusta tamanho da fonte */
+        font-weight: bold; /* Destaca os textos */
+    }
+
+    .container {
+        flex-direction: column; /* Organiza os itens em coluna */
+        align-items: center; /* Centraliza */
+    }
+}
