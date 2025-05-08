@@ -1,0 +1,211 @@
+/* Reset de estilos - Remove margens e preenchimentos padrão dos elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configuração geral da página */
+html, body {
+    height: 100%; /* Faz com que a página ocupe toda a altura da tela */
+    display: flex; /* Usa flexbox para organizar os elementos verticalmente */
+    flex-direction: column; /* Organiza os elementos em coluna */
+    font-family: Arial, sans-serif; /* Define a fonte padrão */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilização do cabeçalho */
+header {
+    display: flex; /* Organiza os elementos horizontalmente */
+    justify-content: space-between; /* Separa os itens do cabeçalho */
+    align-items: center; /* Alinha verticalmente */
+    padding: 18px; /* Adiciona espaçamento interno */
+    background-color: #ffffff; /* Define cor de fundo */
+    position: relative; /* Permite posicionamento interno */
+}
+
+/* Estilização do menu de navegação */
+.menu {
+    display: flex; /* Organiza os links horizontalmente */
+    justify-content: center; /* Centraliza os itens */
+    align-items: center; /* Alinha verticalmente */
+    gap: 20px; /* Adiciona espaçamento entre os itens */
+    padding: 10px; /* Adiciona espaçamento interno */
+    position: absolute; /* Fixa o menu no topo */
+    top: 20px; /* Ajusta a posição vertical */
+    left: 50%; /* Posiciona no centro */
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+}
+
+/* Estilização dos links do menu */
+.menu a {
+    font-size: 20px; /* Define tamanho da fonte */
+    color: #1351d8; /* Define cor do texto */
+    text-decoration: none; /* Remove sublinhado */
+    font-family: Arial, Helvetica, sans-serif; /* Define a fonte */
+}
+
+/* Estilização da área principal */
+main {
+    display: flex; /* Usa flexbox */
+    flex-direction: column; /* Organiza os elementos em coluna */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px; /* Adiciona espaçamento interno */
+    height: 100vh; /* Faz com que o main ocupe a altura total da tela */
+    flex-grow: 1; /* Faz com que o conteúdo principal ocupe o espaço disponível */
+}
+
+/* Estilização do rodapé */
+footer {
+    display: flex; /* Organiza os elementos horizontalmente */
+    align-items: baseline; /* Alinha os itens na base */
+    background-color: #1b357e; /* Define cor de fundo */
+    color: white; /* Define cor do texto */
+    padding: 10px; /* Adiciona espaçamento interno */
+    position: relative; /* Mantém o rodapé fixo no final da página */
+}
+
+/* Estilização da logomarca */
+.logo img {
+    width: 160px; /* Ajuste de tamanho da logo */
+}
+
+/* Estilização da imagem central */
+#imagem_1 img {
+    width: 100%; /* Faz com que a imagem ocupe toda a largura disponível */
+    max-width: 3000px; /* Define um tamanho máximo */
+    height: auto; /* Mantém a proporção */
+}
+
+/* Estilização do rodapé */
+.container {
+    display: flex; /* Organiza os elementos horizontalmente */
+    justify-content: space-between; /* Separa os itens */
+    width: 80%; /* Define largura */
+}
+
+/* Estilização das redes sociais */
+.redes {
+    display: flex; /* Organiza os elementos horizontalmente */
+    align-items: center; /* Alinha os itens verticalmente */
+    gap: 10px; /* Adiciona espaçamento entre os elementos */
+}
+
+/* Ajuste do tamanho dos ícones das redes sociais */
+.redes img {
+    width: 30px; /* Define tamanho dos ícones */
+    height: auto; /* Mantém a proporção */
+}
+
+/* Impede que o texto das redes sociais quebre em várias linhas */
+.redes p {
+    white-space: nowrap;
+}
+
+/* Estilização da logomarca no rodapé */
+.logop {
+    margin-left: 240%; /* Empurra a logomarca para a direita */
+    display: flex; /* Organiza os elementos horizontalmente */
+    flex-direction: row; /* Mantém os elementos em linha */
+    align-items: center; /* Alinha verticalmente */
+}
+
+/* Ajuste do tamanho da logomarca no rodapé */
+.logop img {
+    width: 80px;
+}
+
+/* Estilização do texto de copyright */
+.copyright {
+    text-align: center; /* Centraliza o texto */
+    margin-top: 20px; /* Adiciona espaçamento superior */
+    font-size: 12px; /* Ajuste de tamanho do texto */
+    white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+    width: 100%;
+}
+
+/* Estilização dos botões */
+button {
+    margin-top: 20px; /* Adiciona espaçamento superior */
+    padding: 12px 20px; /* Define tamanho do botão */
+    background-color: #1351d8; /* Define cor de fundo */
+    color: white; /* Define cor do texto */
+    border: none; /* Remove borda */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+    border-radius: 10px; /* Deixa as bordas arredondadas */
+    font-size: 18px; /* Define tamanho da fonte */
+}
+
+/* Efeito ao passar o mouse sobre o botão */
+button:hover {
+    background-color: #0d3a9e; /* Altera a cor de fundo */
+}
+
+/* Estilização da tabela */
+table {
+    width: 100%; /* Faz com que a tabela ocupe toda a largura disponível */
+    border-collapse: collapse; /* Remove espaços entre bordas */
+    margin-top: 20px; /* Adiciona espaçamento superior */
+    table-layout: fixed; /* Garante que todas as colunas tenham tamanho igual */
+}
+
+/* Estilização das células da tabela */
+th, td {
+    border: 1px solid #ffffff; /* Define borda */
+    padding: 4px; /* Adiciona espaçamento interno */
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+/* Estilização do cabeçalho da tabela */
+th {
+    background-color: #f4f4f4; /* Define cor de fundo */
+}
+
+/* Ajuste do tamanho das imagens dentro da tabela */
+td img {
+    width: 200px; /* Define largura */
+    height: auto; /* Mantém a proporção */
+}
+
+/* Estilização do botão "Comparar Modelos" */
+.compare-btn {
+    padding: 10px 20px; /* Define tamanho do botão */
+    background-color: #007bff; /* Define cor de fundo */
+    color: white; /* Define cor do texto */
+    border: none; /* Remove borda */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+    font-size: 16px; /* Define tamanho da fonte */
+}
+
+/* Estilização do formulário de contato */
+form {
+    display: flex; /* Organiza os campos verticalmente */
+    flex-direction: column; /* Mantém os elementos em coluna */
+    gap: 15px; /* Adiciona espaçamento entre os campos */
+    width: 100%; /* Define largura */
+    max-width: 400px; /* Define um tamanho máximo */
+    margin: auto; /* Centraliza o formulário */
+}
+
+/* Estilização do botão "Enviar" */
+#botao_enviar:hover {
+    transform: scale(1.1); /* Aumenta o tamanho ao passar o mouse */
+    background-color: #0056b3; /* Altera a cor de fundo */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 480px) {
+    header {
+        flex-direction: column; /* Organiza os elementos em coluna */
+    }
+
+    .menu {
+        position: static; /* Mantém o menu no fluxo normal */
+        flex-direction: row; /* Organiza os itens horizontalmente */
+        align-items: center; /* Alinha verticalmente */
+        font-size: 18px; /* Aumenta a legibilidade */
+        font-weight: bold; /* Deixa o texto mais marcante */
+    }
+}
